@@ -1,0 +1,58 @@
+
+<div id="login-card" *ngIf="logform">
+    
+    <div class="image-second"><img src="http://localhost/prodiet.jpg" alt=""></div>
+
+        <table id="log-table">
+             <tr>
+                 <th>Email</th>
+                 <td><input type="text" [(ngModel)]="email"></td>
+             </tr>
+             <tr>
+                 <th>Password</th>
+                 <td><input type="password" [(ngModel)]="password"></td>
+             </tr>
+             <tr>
+                 <td colspan=2 
+                     style="text-align:center"><button  (click)="login()">Login</button></td>
+             </tr>
+             <tr>
+                 <td colspan=2 
+                     style="text-align:center; color: #50069a" (click)="toggle()">SignUp</td>
+             </tr>
+        </table>
+        <div class="errors">{{error}}</div>    
+    </div>
+    <div id="login-card" *ngIf="!logform">
+        <div id="image-center"><img src="http://localhost/sushi.jpg" alt=""></div>
+            <table id="log-table">
+                 <tr>
+                     <th>Username</th>
+                     <td><input type="text" [(ngModel)]="rusername"></td>
+                 </tr>
+                 <tr>
+                     <th>Password</th>
+                     <td><input type="password" [(ngModel)]="rpassword"></td>
+                 </tr>
+
+                 <tr>
+                    <th>Verify Password</th>
+                    <td><input type="password" [(ngModel)]="vpassword"></td>
+                </tr>
+
+                <tr>
+                    <th>Email</th>
+                    <td> <input type="text" [(ngModel)]="remail"></td>
+                </tr>
+                 <tr>
+                     <td colspan=2 
+                         style="text-align:center"><button (click)="register()">Register</button></td>
+                 </tr>
+                 <tr>
+                     <td colspan=2 
+                         style="text-align:center; color: #17c2a0" (click)="toggle()">Login </td>
+                 </tr>
+            </table>
+            <div class="errors">{{rerror}}</div>
+    </div>
+    

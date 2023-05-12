@@ -1,0 +1,35 @@
+<mat-toolbar class="menu-bar">
+  <span class="title">{{"menubar.fitpro" | translate}}</span> 
+  <div class="dropdown">
+    <button class="dropbtn" ><mat-icon>reorder</mat-icon>{{"menubar.menu" | translate}}</button>
+    <div class="dropdown-content">
+      <a class="listelement" (click)="home()">
+        <mat-icon class="menu-icon">home</mat-icon>
+        <span>{{"menubar.home" | translate}}</span>
+      </a>
+      <a (click)="dietplan()">
+        <mat-icon class="menu-icon">description</mat-icon>
+        <span>{{"menubar.dietplan" | translate}}</span>
+      </a>
+      <a (click)="create()">
+        <mat-icon class="menu-icon">accessibility</mat-icon>
+        <span>{{"create" | translate}}</span>
+      </a>
+      <a (click)="forum()">
+        <mat-icon class="menu-icon">announcement</mat-icon>
+        <span>{{"menubar.forum" | translate}}</span>
+      </a>
+      <button mat-icon-button (click)="logout()">
+       <mat-icon class="log">logout</mat-icon>
+        <span>{{"menubar.logout" | translate}}</span>
+      </button>
+    </div>
+  </div>
+  <span [style.marginLeft]="'20px'" [style.color]="'white'">
+    <select [(ngModel)]="lang" (change)="changeLang()">
+       <option *ngFor="let x of languages" value={{x.value}}>
+         {{x.name}}</option>
+    </select>
+ </span>
+</mat-toolbar>
+<router-outlet></router-outlet>

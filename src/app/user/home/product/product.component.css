@@ -1,0 +1,58 @@
+.service-box {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    margin: 20px;
+    margin-left:50px;
+    background-color: #f5f5f5;
+    box-shadow: 0px 0px 5px #ccc;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px #ccc;
+  }
+  
+  .image-holder {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .image-holder img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+  
+  .service-box:hover .image-holder img {
+    transform: scale(1.1);
+  }
+  
+  .text {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  .head {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .head h3 {
+    margin: 0;
+    font-size: 12px;
+  }
+  

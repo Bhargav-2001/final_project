@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Post feedback/Queries</h2>
+  <div class="feedback-section">
+    <mat-form-field appearance="fill" class="input-field">
+      <mat-label>Input</mat-label>
+      <input matInput [(ngModel)]="query" class="input-box">
+    </mat-form-field>
+    <button mat-raised-button color="primary" class="b1" (click)="AddQuestion()">Post</button>
+    <app-feedback-box *ngFor="let x of forumlist" [q]="x" class="feedback-box"></app-feedback-box>
+  </div>
+</div>

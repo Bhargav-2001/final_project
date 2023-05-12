@@ -1,0 +1,73 @@
+/* Style the containers */
+.example-container {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Style the heading */
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style the lists */
+.example-list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Style the list items */
+.example-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: move;
+}
+
+/* Style the item details */
+.item-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the input field */
+input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* Style the button */
+button {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+/* Style the nutrition information */
+.result {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}

@@ -1,0 +1,35 @@
+<table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Quantity/Grams</th>
+        <th>Protein</th>
+        <th>Carbohydrates</th>
+        <th>Fat</th>
+        <th>Fiber</th>  
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of productlist" (click)="selectProduct(product)">
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.type }}</td>
+        <td>{{ product.Grams }}</td>
+        <td>{{ product.Protein}}</td>
+        <td>{{product.Carbs}}</td>
+        <td>{{product.Fat}}</td>
+        <td>{{product.Fiber}}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+  
+  <div *ngIf="selectedProduct">
+    <h2>{{ selectedProduct.name }}</h2>
+    <p>{{ selectedProduct.Protein }}</p>
+    <p>Price: {{ selectedProduct.price }}</p>
+    <p>Type: {{ selectedProduct.type }}</p>
+  </div>
+  

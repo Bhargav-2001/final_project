@@ -1,0 +1,10 @@
+{
+    "menubar": {
+        "fitpro" : "Fit Pro",
+        "menu": "Menu",
+        "home":"Home",
+        "dietplan": "Diet-plan",
+         "create"  : "Reach-us",
+         "forum":"Forum"
+    }
+}

@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding: 2rem;
+    width:500px;
+    margin-left: 25%;
+    background-color: rgb(148, 233, 111);
+  }
+  
+  .feedback-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 2px;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .input-field {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .input-box {
+    width: 100%;
+  }
+  
+  .feedback-box {
+    margin-top: 1rem;
+    width: 100%;
+  }
+  

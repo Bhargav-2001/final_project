@@ -1,0 +1,51 @@
+#form {
+  margin: 20px auto;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.producttitle {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.formbox {
+  margin-bottom: 20px;
+}
+
+.name {
+  display: inline-block;
+  width: 120px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.input {
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 300px;
+}
+
+.alert {
+  margin-bottom: 20px;
+}
+
+.button1 {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button1:hover {
+  background-color: #3e8e41;
+}
