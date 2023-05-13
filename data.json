@@ -292,6 +292,13 @@
       "username": "bhargav",
       "type": "user",
       "id": 21
+    },
+    {
+      "email": "ram@gmail.com",
+      "password": "$2a$10$uOS4v7MKzrn/tBR2HnecC./YQLWDT0nVUBUuTk3jeknvMuhs4u3V.",
+      "username": "bhargav",
+      "type": "user",
+      "id": 22
     }
   ],
   "products": [
@@ -1031,7 +1038,6 @@
     }
   ],
   "forum": [
-    
     {
       "id": 2,
       "question": "nice-app",
